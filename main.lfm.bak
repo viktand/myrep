@@ -1,0 +1,116 @@
+object Form1: TForm1
+  Left = 263
+  Height = 449
+  Top = 161
+  Width = 717
+  Caption = 'MyRep'
+  ClientHeight = 449
+  ClientWidth = 717
+  LCLVersion = '0.9.30'
+  object PageControl1: TPageControl
+    Left = 15
+    Height = 401
+    Top = 23
+    Width = 682
+    ActivePage = TabSheet1
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Структура'
+      ClientHeight = 373
+      ClientWidth = 674
+      object Button1: TButton
+        Left = 17
+        Height = 27
+        Top = 32
+        Width = 121
+        Caption = 'Создать'
+        OnClick = Button1Click
+        TabOrder = 0
+      end
+      object Button2: TButton
+        Left = 17
+        Height = 27
+        Top = 65
+        Width = 121
+        Caption = 'Открыть'
+        TabOrder = 1
+      end
+      object TreeView1: TTreeView
+        Left = 157
+        Height = 319
+        Top = 32
+        Width = 364
+        DefaultItemHeight = 17
+        TabOrder = 2
+      end
+      object Button3: TButton
+        Left = 541
+        Height = 27
+        Top = 32
+        Width = 121
+        Caption = 'Добавить папку'
+        TabOrder = 3
+      end
+      object Button4: TButton
+        Left = 541
+        Height = 27
+        Top = 321
+        Width = 121
+        Caption = 'Сохранить'
+        TabOrder = 4
+      end
+    end
+  end
+  object Panel1: TPanel
+    Left = 192
+    Height = 128
+    Top = 152
+    Width = 320
+    BorderWidth = 3
+    BorderStyle = bsSingle
+    ClientHeight = 124
+    ClientWidth = 316
+    TabOrder = 1
+    Visible = False
+    object Label1: TLabel
+      Left = 4
+      Height = 16
+      Top = 4
+      Width = 308
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'Label1'
+      ParentColor = False
+    end
+    object Edit1: TEdit
+      Left = 6
+      Height = 23
+      Top = 41
+      Width = 298
+      TabOrder = 0
+      Text = 'Edit1'
+    end
+    object Button5: TButton
+      Left = 86
+      Height = 25
+      Top = 82
+      Width = 75
+      Caption = 'Отмена'
+      TabOrder = 1
+    end
+    object Button6: TButton
+      Left = 166
+      Height = 25
+      Top = 82
+      Width = 75
+      Caption = 'Ок'
+      OnClick = Button6Click
+      TabOrder = 2
+    end
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    left = 72
+    top = 368
+  end
+end
